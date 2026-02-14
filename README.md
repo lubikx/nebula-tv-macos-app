@@ -11,12 +11,18 @@ A lightweight floating video player for [nebula.tv](https://nebula.tv). Sits on 
 
 **Requires macOS 14 (Sonoma) or later.**
 
-## Automated Installation
+## Install
 
 Paste in Terminal:
 
-```bash
-curl -sL https://github.com/lubikx/nebula-macos-app/releases/latest/download/Nebula.dmg -o /tmp/Nebula.dmg && hdiutil attach /tmp/Nebula.dmg -nobrowse -quiet && cp -R "/Volumes/Nebula/Nebula.app" /Applications/ && hdiutil detach "/Volumes/Nebula" -quiet && xattr -cr /Applications/Nebula.app && rm /tmp/Nebula.dmg && echo "Nebula installed!"
+```
+curl -sL raw.githubusercontent.com/lubikx/nebula-macos-app/main/install.sh | bash
+```
+
+To install a specific version (e.g. for testing updates):
+
+```
+curl -sL raw.githubusercontent.com/lubikx/nebula-macos-app/main/install.sh | bash -s 1.0.0
 ```
 
 ## Manual Installation
