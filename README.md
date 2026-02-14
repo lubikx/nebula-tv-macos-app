@@ -23,7 +23,10 @@ curl -sL https://github.com/lubikx/nebula-macos-app/releases/latest/download/Neb
 
 1. Download `Nebula.dmg` from the [Releases](https://github.com/lubikx/nebula-macos-app/releases) page
 2. Open the DMG and drag **Nebula.app** to `/Applications`
-3. Before first launch, right-click the app → **Open** → click **Open** in the dialog (required once for unsigned apps)
+3. Open Finder → Go → Applications (or press Cmd+Shift+A)
+4. Right-click **Nebula** → **Open** → click **Open** in the dialog
+
+> **Why the extra step?** The app isn't signed with an Apple Developer certificate (it's a small personal tool — the $99/year fee isn't worth it). macOS blocks unsigned apps by default, but right-clicking → Open bypasses this once. After that, it launches normally.
 
 ## Keyboard Shortcuts
 
