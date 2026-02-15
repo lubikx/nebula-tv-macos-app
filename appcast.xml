@@ -4,6 +4,26 @@
         <title>Nebula Updates</title>
         <language>en</language>
         <item>
+            <title>Version 1.0.3</title>
+            <pubDate>Sat, 15 Feb 2026 00:00:00 +0000</pubDate>
+            <sparkle:version>1.0.3</sparkle:version>
+            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                    <li>Fixed fullscreen — Enter Full Screen is back in the View menu</li>
+                    <li>Fixed About window appearing behind the player</li>
+                    <li>Fixed duplicate Window menu</li>
+                    <li>Help menu now shows useful links</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/lubikx/nebula-macos-app/releases/download/v1.0.3/Nebula.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="eqWm/bZtWcIvfLdQC32PZiod2rTL+CAQQv6/SnXxrABHXYM7mwT/+uUAQ4lCEbQvYydS029/CKqiCyAzmVB3Bg=="
+                       length="2539702" />
+        </item>
+        <item>
             <title>Version 1.0.2</title>
             <pubDate>Fri, 14 Feb 2026 00:00:00 +0000</pubDate>
             <sparkle:version>1</sparkle:version>
