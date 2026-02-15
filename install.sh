@@ -58,13 +58,13 @@ step() {
     echo -ne "    ${ARROW} ${1}..."
 }
 done_step() {
-    echo -e "\r    ${CHECK} ${1}    "
+    echo -e "\033[2K\r    ${CHECK} ${1}"
 }
 skip_step() {
-    echo -e "\r    ${SKIP} ${1}    "
+    echo -e "\033[2K\r    ${SKIP} ${1}"
 }
 fail_step() {
-    echo -e "\r    ${CROSS} ${1}    "
+    echo -e "\033[2K\r    ${CROSS} ${1}"
     echo -e "\n    ${RED}Installation failed.${RESET}\n"
     exit 1
 }
