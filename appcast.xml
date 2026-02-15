@@ -4,6 +4,23 @@
         <title>Nebula.tv Updates</title>
         <language>en</language>
         <item>
+            <title>Version 1.0.10</title>
+            <pubDate>Sat, 15 Feb 2026 20:00:00 +0000</pubDate>
+            <sparkle:version>1.0.10</sparkle:version>
+            <sparkle:shortVersionString>1.0.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                    <li>Double-click title bar to snap/maximize</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/lubikx/nebula-tv-macos-app/releases/download/v1.0.10/Nebula.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="1fQK0TSDF8DiV+sDYR+BLN45BWf8IhSamkMa3Xj5n4eNGspDq5fdPSyVny0gfPobMs/gGG19tsGk6Cr05WKsCQ=="
+                       length="2622988" />
+        </item>
+        <item>
             <title>Version 1.0.9</title>
             <pubDate>Sat, 15 Feb 2026 19:00:00 +0000</pubDate>
             <sparkle:version>1.0.9</sparkle:version>
