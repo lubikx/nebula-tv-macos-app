@@ -2,6 +2,8 @@
 
 A lightweight floating video player for [nebula.tv](https://nebula.tv). Sits on top of your workspace like a PiP window.
 
+> **Disclaimer:** Nebula is a trademark of [Standard Broadcast LLC](https://standard.tv). This app is not affiliated with, endorsed by, or officially connected to Nebula or Standard Broadcast in any way.
+
 ## Features
 
 - Borderless floating window — always on top while you work
@@ -16,13 +18,7 @@ A lightweight floating video player for [nebula.tv](https://nebula.tv). Sits on 
 Paste in Terminal:
 
 ```
-curl -sL raw.githubusercontent.com/lubikx/nebula-macos-app/main/install.sh | bash
-```
-
-To install a specific version (e.g. for testing updates):
-
-```
-curl -sL raw.githubusercontent.com/lubikx/nebula-macos-app/main/install.sh | bash -s 1.0.0
+curl -sL https://raw.githubusercontent.com/lubikx/nebula-macos-app/main/install.sh | bash
 ```
 
 ## Manual Installation
@@ -38,6 +34,7 @@ curl -sL raw.githubusercontent.com/lubikx/nebula-macos-app/main/install.sh | bas
 
 | Shortcut | Action |
 |----------|--------|
+| Cmd+R | Reload page |
 | Cmd+T | Toggle always on top |
 | Cmd+P | Snap to lower-right corner |
 | Cmd+Return | Maximize / Restore |
