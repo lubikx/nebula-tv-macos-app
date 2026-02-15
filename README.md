@@ -18,12 +18,12 @@ A lightweight floating video player for [nebula.tv](https://nebula.tv). Sits on 
 Paste in Terminal:
 
 ```
-curl -sL https://raw.githubusercontent.com/lubikx/nebula-macos-app/main/install.sh | bash
+curl -sL https://raw.githubusercontent.com/lubikx/nebula-tv-macos-app/main/install.sh | bash
 ```
 
 ## Manual Installation
 
-1. Download `Nebula.dmg` from the [Releases](https://github.com/lubikx/nebula-macos-app/releases) page
+1. Download `Nebula.dmg` from the [Releases](https://github.com/lubikx/nebula-tv-macos-app/releases) page
 2. Open the DMG and drag **Nebula.tv.app** to `/Applications`
 3. Open Finder → Go → Applications (or press Cmd+Shift+A)
 4. Right-click **Nebula.tv** → **Open** → click **Open** in the dialog
@@ -53,4 +53,4 @@ Alternatively, just re-run the install script — it resets settings automatical
 
 ## Feedback & Support
 
-Have a question, suggestion, or found a bug? Head over to [Discussions](https://github.com/lubikx/nebula-macos-app/discussions).
+Have a question, suggestion, or found a bug? Head over to [Discussions](https://github.com/lubikx/nebula-tv-macos-app/discussions).

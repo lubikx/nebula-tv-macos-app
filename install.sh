@@ -27,9 +27,9 @@ while getopts "s:d" opt; do
 done
 
 if [ -n "$VERSION" ]; then
-    URL="https://github.com/lubikx/nebula-macos-app/releases/download/v${VERSION}/Nebula.dmg"
+    URL="https://github.com/lubikx/nebula-tv-macos-app/releases/download/v${VERSION}/Nebula.dmg"
 else
-    URL="https://github.com/lubikx/nebula-macos-app/releases/latest/download/Nebula.dmg"
+    URL="https://github.com/lubikx/nebula-tv-macos-app/releases/latest/download/Nebula.dmg"
 fi
 
 # ─── Logo ─────────────────────────────────────────────────────

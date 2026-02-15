@@ -15,7 +15,7 @@
                     <li>Auto-check for updates — no more first-launch prompt</li>
                 </ul>
             ]]></description>
-            <enclosure url="https://github.com/lubikx/nebula-macos-app/releases/download/v1.0.9/Nebula.dmg"
+            <enclosure url="https://github.com/lubikx/nebula-tv-macos-app/releases/download/v1.0.9/Nebula.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="EUTJHKqrfuRbpgshgefzcCUGWyxQQZIsLV94Ni0xwNZY507BSxcPZSCXcF+wsGPu7iGfllr/qcaHXiT244LBAQ=="
                        length="2624896" />
@@ -32,7 +32,7 @@
                     <li>Default snap size increased to 1/3 screen width</li>
                 </ul>
             ]]></description>
-            <enclosure url="https://github.com/lubikx/nebula-macos-app/releases/download/v1.0.8/Nebula.dmg"
+            <enclosure url="https://github.com/lubikx/nebula-tv-macos-app/releases/download/v1.0.8/Nebula.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="dR7Moa2s5eQPxUQuTi4AFVW6CopnMXWINy8JdoQdTiXIQpc7vO4A0UXHdjfReLMMtIrPmpfjkv04V6hCO9IKAw=="
                        length="2622248" />
@@ -49,7 +49,7 @@
                     <li>Default snap size increased to 1/4 screen width</li>
                 </ul>
             ]]></description>
-            <enclosure url="https://github.com/lubikx/nebula-macos-app/releases/download/v1.0.7/Nebula.dmg"
+            <enclosure url="https://github.com/lubikx/nebula-tv-macos-app/releases/download/v1.0.7/Nebula.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="RfocfSPgfSfjm1wHCkPGZcyQyLCnRA0VzpI8oY4SYIvSc5kU2Smd9Q025jUpc/cfh48HC0Sx0sxKsobHtrg3CQ=="
                        length="2622278" />
@@ -67,7 +67,7 @@
                     <li>Welcome window properly sized and centered</li>
                 </ul>
             ]]></description>
-            <enclosure url="https://github.com/lubikx/nebula-macos-app/releases/download/v1.0.6/Nebula.dmg"
+            <enclosure url="https://github.com/lubikx/nebula-tv-macos-app/releases/download/v1.0.6/Nebula.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="JH1SMPa3/38GODUGSkWnYeThU+gvRn2wdqqOjjxxP6uuS2EogoTXRphguzIlmVRVKeLBPtJqbNSUXy7EddVNDA=="
                        length="2622261" />
@@ -86,7 +86,7 @@
                     <li>Snap / Maximize toggle (⌘ Enter) — remembers your position</li>
                 </ul>
             ]]></description>
-            <enclosure url="https://github.com/lubikx/nebula-macos-app/releases/download/v1.0.5/Nebula.dmg"
+            <enclosure url="https://github.com/lubikx/nebula-tv-macos-app/releases/download/v1.0.5/Nebula.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="X83PCcpD3B2go0i++v0LzSXMUPIGgaVtGQQMVWNzwamkd3YFL2ouPCnMjcEzzo/hLyYrnZ31sKJPkge+ZffCCA=="
                        length="2618342" />
@@ -104,7 +104,7 @@
                     <li>Fixed About window appearing behind the player</li>
                 </ul>
             ]]></description>
-            <enclosure url="https://github.com/lubikx/nebula-macos-app/releases/download/v1.0.4/Nebula.dmg"
+            <enclosure url="https://github.com/lubikx/nebula-tv-macos-app/releases/download/v1.0.4/Nebula.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="tcKSC5O1kpLKUan5o7H/a+AQHEvLjjzpht9UL+Dd20sMapPhTdbfCrq1pTi1M92FrRbG1f1fH3q3PHabpiQxCw=="
                        length="2565496" />
@@ -124,7 +124,7 @@
                     <li>Help menu now shows useful links</li>
                 </ul>
             ]]></description>
-            <enclosure url="https://github.com/lubikx/nebula-macos-app/releases/download/v1.0.3/Nebula.dmg"
+            <enclosure url="https://github.com/lubikx/nebula-tv-macos-app/releases/download/v1.0.3/Nebula.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="eqWm/bZtWcIvfLdQC32PZiod2rTL+CAQQv6/SnXxrABHXYM7mwT/+uUAQ4lCEbQvYydS029/CKqiCyAzmVB3Bg=="
                        length="2539702" />
@@ -141,7 +141,7 @@
                     <li>Fixed auto-update installation</li>
                 </ul>
             ]]></description>
-            <enclosure url="https://github.com/lubikx/nebula-macos-app/releases/download/v1.0.2/Nebula.dmg"
+            <enclosure url="https://github.com/lubikx/nebula-tv-macos-app/releases/download/v1.0.2/Nebula.dmg"
                        type="application/octet-stream"
                        sparkle:edSignature="QHnluS9P/ZjKxe9kHoBbtivWm7VpNMkFKHnWxE4CG/HgkOplBiSa1gC7LlrmPo47xtwDNgWnVjJf8M90k/K1AQ=="
                        length="2533205" />
