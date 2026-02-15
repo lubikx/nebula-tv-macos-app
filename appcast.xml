@@ -4,6 +4,24 @@
         <title>Nebula Updates</title>
         <language>en</language>
         <item>
+            <title>Version 1.0.4</title>
+            <pubDate>Sat, 15 Feb 2026 12:00:00 +0000</pubDate>
+            <sparkle:version>1.0.4</sparkle:version>
+            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                    <li>Fixed About window showing redundant version "1.0.3 (1.0.3)"</li>
+                    <li>Fixed About window appearing behind the player</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/lubikx/nebula-macos-app/releases/download/v1.0.4/Nebula.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="2cqC+6KJtnr9aa8bvaJGPycrrejChqOiCZkndkrOFRHY3ZdeEoLLRCmKAXN1sJj5p6hzRJQDVKbF15I+X1DwBQ=="
+                       length="2558353" />
+        </item>
+        <item>
             <title>Version 1.0.3</title>
             <pubDate>Sat, 15 Feb 2026 00:00:00 +0000</pubDate>
             <sparkle:version>1.0.3</sparkle:version>
