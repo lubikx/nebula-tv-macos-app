@@ -12,7 +12,6 @@ YELLOW=$'\033[33m'
 PURPLE=$'\033[35m'
 BLUE=$'\033[34m'
 CHECK="${GREEN}✓${RESET}"
-ARROW="${CYAN}→${RESET}"
 CROSS="${RED}✗${RESET}"
 SKIP="${YELLOW}⊘${RESET}"
 
@@ -53,71 +52,51 @@ if $DRY_RUN; then
     echo ""
 fi
 
-# ─── Step helpers ────────────────────────────────────────────
-step() {
-    printf "    ${ARROW} %s..." "$1"
-}
-done_step() {
-    printf "\r    ${CHECK} %s\033[K\n" "$1"
-}
-skip_step() {
-    printf "\r    ${SKIP} %s\033[K\n" "$1"
-}
-fail_step() {
-    printf "\r    ${CROSS} %s\033[K\n" "$1"
-    echo -e "\n    ${RED}Installation failed.${RESET}\n"
-    exit 1
-}
+# ─── Helpers ─────────────────────────────────────────────────
+ok()   { echo -e "    ${CHECK} $1"; }
+skip() { echo -e "    ${SKIP} $1"; }
+fail() { echo -e "    ${CROSS} $1"; echo -e "\n    ${RED}Installation failed.${RESET}\n"; exit 1; }
 
 # ─── Reset settings ──────────────────────────────────────────
-step "Resetting app settings"
 if $DRY_RUN; then
-    skip_step "Reset app settings (skipped)"
+    skip "Reset app settings (skipped)"
 else
     defaults delete eu.apptory.nebula 2>/dev/null || true
-    done_step "Settings cleared"
+    ok "Settings cleared"
 fi
 
 # ─── Install ─────────────────────────────────────────────────
-step "Downloading"
 if $DRY_RUN; then
-    skip_step "Download (skipped)"
+    skip "Download (skipped)"
 else
-    if ! curl -sL "$URL" -o /tmp/Nebula.dmg 2>/dev/null; then
-        fail_step "Download failed"
-    fi
-    done_step "Downloaded"
+    curl -sL "$URL" -o /tmp/Nebula.dmg 2>/dev/null || fail "Download failed"
+    ok "Downloaded"
 fi
 
-step "Mounting disk image"
 if $DRY_RUN; then
-    skip_step "Mount disk image (skipped)"
+    skip "Mount disk image (skipped)"
 else
-    if ! hdiutil attach /tmp/Nebula.dmg -nobrowse -quiet 2>/dev/null; then
-        fail_step "Mount failed"
-    fi
-    done_step "Mounted"
+    hdiutil attach /tmp/Nebula.dmg -nobrowse -quiet 2>/dev/null || fail "Mount failed"
+    ok "Mounted"
 fi
 
-step "Installing to /Applications"
 if $DRY_RUN; then
-    skip_step "Copy to /Applications (skipped)"
+    skip "Copy to /Applications (skipped)"
 else
     if ! cp -R "/Volumes/Nebula/Nebula.tv.app" /Applications/ 2>/dev/null; then
         hdiutil detach "/Volumes/Nebula" -quiet 2>/dev/null
-        fail_step "Copy failed"
+        fail "Copy failed"
     fi
-    done_step "Installed"
+    ok "Installed"
 fi
 
-step "Cleaning up"
 if $DRY_RUN; then
-    skip_step "Clean up (skipped)"
+    skip "Clean up (skipped)"
 else
     hdiutil detach "/Volumes/Nebula" -quiet 2>/dev/null
     xattr -cr "/Applications/Nebula.tv.app" 2>/dev/null
     rm -f /tmp/Nebula.dmg
-    done_step "Cleaned up"
+    ok "Cleaned up"
 fi
 
 # ─── Done ────────────────────────────────────────────────────
@@ -141,7 +120,7 @@ fi
 
 if [ -z "$answer" ] || [ "$answer" = "y" ] || [ "$answer" = "Y" ]; then
     if $DRY_RUN; then
-        echo -e "    ${SKIP} Launch (skipped)"
+        skip "Launch (skipped)"
     else
         open "/Applications/Nebula.tv.app"
         echo -e "    ${CHECK} Launched. Enjoy! ${DIM}✧${RESET}"
