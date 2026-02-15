@@ -1,4 +1,4 @@
-# Nebula for macOS
+# Nebula.tv for macOS
 
 A lightweight floating video player for [nebula.tv](https://nebula.tv). Sits on top of your workspace like a PiP window.
 
@@ -8,7 +8,7 @@ A lightweight floating video player for [nebula.tv](https://nebula.tv). Sits on 
 
 - Borderless floating window — always on top while you work
 - Theater mode — auto-hides Nebula UI when video plays
-- Keyboard shortcuts: snap to corner, maximize, toggle always-on-top
+- Keyboard shortcuts: snap/maximize toggle, always-on-top, full screen
 - Auto-updates via Sparkle
 
 **Requires macOS 14 (Sonoma) or later.**
@@ -24,9 +24,9 @@ curl -sL https://raw.githubusercontent.com/lubikx/nebula-macos-app/main/install.
 ## Manual Installation
 
 1. Download `Nebula.dmg` from the [Releases](https://github.com/lubikx/nebula-macos-app/releases) page
-2. Open the DMG and drag **Nebula.app** to `/Applications`
+2. Open the DMG and drag **Nebula.tv.app** to `/Applications`
 3. Open Finder → Go → Applications (or press Cmd+Shift+A)
-4. Right-click **Nebula** → **Open** → click **Open** in the dialog
+4. Right-click **Nebula.tv** → **Open** → click **Open** in the dialog
 
 > **Why the extra step?** The app isn't signed with an Apple Developer certificate (it's a small personal tool — the $99/year fee isn't worth it). macOS blocks unsigned apps by default, but right-clicking → Open bypasses this once. After that, it launches normally.
 
@@ -34,8 +34,7 @@ curl -sL https://raw.githubusercontent.com/lubikx/nebula-macos-app/main/install.
 
 | Shortcut | Action |
 |----------|--------|
-| Cmd+R | Reload page |
-| Cmd+T | Toggle always on top |
-| Cmd+P | Snap to lower-right corner |
-| Cmd+Return | Maximize / Restore |
-| Escape | Exit theater mode |
+| ⌘ R | Reload page |
+| ⌘ T | Toggle always on top |
+| ⌘ Enter | Snap / Maximize |
+| ⌃ ⌘ F | Full Screen |
