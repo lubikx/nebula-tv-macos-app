@@ -38,3 +38,7 @@ curl -sL https://raw.githubusercontent.com/lubikx/nebula-macos-app/main/install.
 | ⌘ T | Toggle always on top |
 | ⌘ Enter | Snap / Maximize |
 | ⌃ ⌘ F | Full Screen |
+
+## Feedback & Support
+
+Have a question, suggestion, or found a bug? Head over to [Discussions](https://github.com/lubikx/nebula-macos-app/discussions).
