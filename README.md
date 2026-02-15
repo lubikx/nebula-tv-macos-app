@@ -6,9 +6,9 @@ A lightweight floating video player for [nebula.tv](https://nebula.tv). Sits on 
 
 ## Features
 
-- Borderless floating window — always on top while you work
-- Theater mode — auto-hides Nebula UI when video plays
-- Keyboard shortcuts: snap/maximize toggle, always-on-top, full screen
+- **Snap small** — video fills the window, Nebula UI hidden, window floats on top
+- **Go big** — full Nebula experience, normal window behavior
+- Press **⌘ Enter** (or double-click the title bar) to toggle between the two
 - Auto-updates via Sparkle
 
 **Requires macOS 14 (Sonoma) or later.**
@@ -34,10 +34,12 @@ curl -sL https://raw.githubusercontent.com/lubikx/nebula-tv-macos-app/main/insta
 
 | Shortcut | Action |
 |----------|--------|
-| ⌘ R | Reload page |
-| ⌘ T | Toggle always on top |
 | ⌘ Enter | Snap / Maximize |
+| ⌘ T | Toggle always on top |
+| ⌘ R | Reload page |
 | ⌃ ⌘ F | Full Screen |
+
+When the window is **small** (less than half your screen), it automatically floats on top and shows just the video. When **big**, it behaves like a normal window with the full Nebula UI.
 
 ## Troubleshooting
 

@@ -4,6 +4,27 @@
         <title>Nebula.tv Updates</title>
         <language>en</language>
         <item>
+            <title>Version 1.0.12</title>
+            <pubDate>Sat, 15 Feb 2026 22:00:00 +0000</pubDate>
+            <sparkle:version>1.0.12</sparkle:version>
+            <sparkle:shortVersionString>1.0.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                    <li>Smart window mode — small window shows just the video and floats on top, big window shows full Nebula UI</li>
+                    <li>⌘ Enter only snaps when a video is playing</li>
+                    <li>⌘ T toggles always-on-top for the small window</li>
+                    <li>Larger drag area in small window mode</li>
+                    <li>Fullscreen button removed from player controls</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/lubikx/nebula-tv-macos-app/releases/download/v1.0.12/Nebula.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="7jfTvVXAh5doi02MyK++S78kc3wCsDJ/A1l5U4HUX/EbmNtCE0xirwK4/hVBzaov4CoK7Jk4UwYsSV6fXu/hCQ=="
+                       length="2641529" />
+        </item>
+        <item>
             <title>Version 1.0.11</title>
             <pubDate>Sat, 15 Feb 2026 21:00:00 +0000</pubDate>
             <sparkle:version>1.0.11</sparkle:version>
