@@ -2,13 +2,12 @@
 set -e
 
 # ─── Colors & Symbols ───────────────────────────────────────
-BOLD='[1m'
-DIM='[2m'
-RESET='[0m'
-BLUE='[34m'
-GREEN='[32m'
-RED='[31m'
-CYAN='[36m'
+BOLD=$'\033[1m'
+DIM=$'\033[2m'
+RESET=$'\033[0m'
+GREEN=$'\033[32m'
+RED=$'\033[31m'
+CYAN=$'\033[36m'
 CHECK="${GREEN}✓${RESET}"
 ARROW="${CYAN}→${RESET}"
 CROSS="${RED}✗${RESET}"
@@ -42,13 +41,11 @@ step() {
     echo -ne "  ${ARROW} ${1}..."
 }
 done_step() {
-    echo -e "  ${CHECK} ${1}    "
+    echo -e "\r  ${CHECK} ${1}    "
 }
 fail_step() {
-    echo -e "  ${CROSS} ${1}    "
-    echo -e "
-  ${RED}Installation failed.${RESET}
-"
+    echo -e "\r  ${CROSS} ${1}    "
+    echo -e "\n  ${RED}Installation failed.${RESET}\n"
     exit 1
 }
 
@@ -88,7 +85,7 @@ echo -ne "  Launch now? ${DIM}[Y/n]${RESET} "
 read -r answer
 if [[ -z "$answer" || "$answer" =~ ^[Yy]$ ]]; then
     open "/Applications/Nebula.tv.app"
-    echo -e "  ${CHECK} Launched. Enjoy! 🚀"
+    echo -e "  ${CHECK} Launched. Enjoy!"
 else
     echo -e "  ${DIM}Open it anytime from /Applications.${RESET}"
 fi
