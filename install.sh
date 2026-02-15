@@ -81,16 +81,19 @@ echo -e "  ${GREEN}${BOLD}Nebula.tv for macOS installed!${RESET}"
 echo ""
 
 # ─── Launch prompt ───────────────────────────────────────────
-if [ -t 0 ] || [ -e /dev/tty ]; then
+answer=""
+if [ -t 0 ]; then
+    echo -ne "  Launch now? ${DIM}[Y/n]${RESET} "
+    read -r answer
+elif [ -c /dev/tty ] 2>/dev/null; then
     echo -ne "  Launch now? ${DIM}[Y/n]${RESET} "
     read -r answer < /dev/tty
-    if [ -z "$answer" ] || [ "$answer" = "y" ] || [ "$answer" = "Y" ]; then
-        open "/Applications/Nebula.tv.app"
-        echo -e "  ${CHECK} Launched. Enjoy!"
-    else
-        echo -e "  ${DIM}Open it anytime from /Applications.${RESET}"
-    fi
+fi
+
+if [ -z "$answer" ] || [ "$answer" = "y" ] || [ "$answer" = "Y" ]; then
+    open "/Applications/Nebula.tv.app"
+    echo -e "  ${CHECK} Launched. Enjoy!"
 else
-    echo -e "  ${DIM}Open it from /Applications.${RESET}"
+    echo -e "  ${DIM}Open it anytime from /Applications.${RESET}"
 fi
 echo ""
