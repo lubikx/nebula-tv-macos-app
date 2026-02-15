@@ -55,16 +55,16 @@ fi
 
 # ─── Step helpers ────────────────────────────────────────────
 step() {
-    echo -ne "    ${ARROW} ${1}..."
+    printf "    ${ARROW} %s..." "$1"
 }
 done_step() {
-    echo -e "\033[2K\r    ${CHECK} ${1}"
+    printf "\r    ${CHECK} %s\033[K\n" "$1"
 }
 skip_step() {
-    echo -e "\033[2K\r    ${SKIP} ${1}"
+    printf "\r    ${SKIP} %s\033[K\n" "$1"
 }
 fail_step() {
-    echo -e "\033[2K\r    ${CROSS} ${1}"
+    printf "\r    ${CROSS} %s\033[K\n" "$1"
     echo -e "\n    ${RED}Installation failed.${RESET}\n"
     exit 1
 }
