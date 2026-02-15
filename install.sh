@@ -49,6 +49,11 @@ fail_step() {
     exit 1
 }
 
+# ─── Reset settings ──────────────────────────────────────────
+step "Resetting app settings"
+defaults delete eu.apptory.nebula 2>/dev/null || true
+done_step "Settings cleared"
+
 # ─── Install ─────────────────────────────────────────────────
 step "Downloading"
 if ! curl -sL "$URL" -o /tmp/Nebula.dmg 2>/dev/null; then

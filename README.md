@@ -39,6 +39,18 @@ curl -sL https://raw.githubusercontent.com/lubikx/nebula-macos-app/main/install.
 | ⌘ Enter | Snap / Maximize |
 | ⌃ ⌘ F | Full Screen |
 
+## Troubleshooting
+
+If the app misbehaves, reset all settings by running:
+
+```
+defaults delete eu.apptory.nebula
+```
+
+Then relaunch the app. This clears saved window positions, welcome screen state, and all other preferences.
+
+Alternatively, just re-run the install script — it resets settings automatically.
+
 ## Feedback & Support
 
 Have a question, suggestion, or found a bug? Head over to [Discussions](https://github.com/lubikx/nebula-macos-app/discussions).
